@@ -1,0 +1,49 @@
+#!/bin/sh
+
+#########################################################
+# wrapper script for a nifty little text-editor I wrote #
+#########################################################
+
+#########
+# usage #
+#########
+
+USAGE="Usage: `basename $0` [-p <property_file>] <file>"
+
+####################
+# global variables #
+####################
+
+PROPERTY_FILE="$HOME/.snorfrc";
+FILE=""; # default is not to specify an initial file
+
+########################
+# command-line parsing #
+########################
+
+# make sure the command-line is formatted correctly...
+if [ $# -gt 3 ]; then
+  echo $USAGE>&2
+  exit
+fi
+# get the arguments...
+while getopts p: OPT
+do 
+  case $OPT in
+    # if you specify a property file,
+    # move the context along (via shift)...
+    p) PROPERTY_FILE="$OPTARG";
+       shift; shift;;
+    *) echo $USAGE>&2; 
+       exit;;
+  esac
+done
+# any remaining argument must be the file...
+FILE=$1
+
+############
+# do stuff #
+############
+
+# call the Java program...
+/opt/jdk/bin/java -jar ~/bin/snorf.jar -p $PROPERTY_FILE $FILE
