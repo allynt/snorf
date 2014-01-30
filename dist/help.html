@@ -1,0 +1,48 @@
+<html>
+<img src="./snorf_logo.png" style="float: right; height: 48px;"/>
+<h2 style="color: #005500;">snorf</h2>a simple text editor
+<hr/>
+<p>This is a minimal text editor with just the features I want, and <i>no crap</i>.</p>
+<p>It lets me concentrate on writing with no distractions; It provides a full-screen window with lots of calming blank space; It doesn't try to deal with icky formatting, it just deals with raw text. The only features it bothers with are opening &amp; saving files, updating the color scheme, resizing the font, tracking the word count, etc., and searching for text.</p>
+<hr/>
+<p>commands are as follows:
+<div style="border: 2px solid #005500; width: 60%;">
+<ul>
+<li><b>ctrl-mouse wheel</b>: increases/decreases the text size
+<li><b>ctrl-up/down</b>: increases/decreases the text size
+<li><b>mouse click on statusBar</b>: update statistics (word count, etc.) in statusBar
+<li><b>rt. mouse button</b>: brings up the context menu which offers the following options<br>
+(some of which also have keyboard shortcuts)
+<ul>
+<li><b>ctrl-N</b>: new document
+<li><b>ctrl-O</b>: open document
+<li><b>ctrl-S</b>: save document
+<li>save document as...
+<li><b>ctrl-F</b>: display find panel
+<li>change the color scheme
+<li><b>ctrl-U</b>: update statistics (word count, etc.) in statusBar
+<li><b>esc</b>: minimizes the application
+<li><b>ctrl-H</b>: display this help page
+<li><b>ctrl-Q</b>: quit application
+</ul>
+<li><b>ctrl-C</b>: copy
+<li><b>ctrl-X</b>: cut
+<li><b>ctrl-V</b>: paste
+</ul>
+</div>
+<br/>
+<hr/>
+<p>snorf uses a property file, typically located at "$HOME/.snorfrc" with the following format:</p>
+<pre>
+marginPct=2.5
+bgColor=010101
+fontSize=41
+resizeable=false
+fgColor=ad2a57
+</pre>
+<p>If settings are changed while running snorf, this file is overwritten with the new settings.</p>
+<hr/>
+<p>snorf is provided with a wrapper shell script to make calling it easy.  Usage is: <i>snorf [-p &lt;property file&gt;] [&lt;file to edit&gt;]</i>.
+<p style='color: #005500; font-weight: bold; text-align: right; padding: 10px; margin: 10px'><i>enjoy!</i></p>
+</html>
+
