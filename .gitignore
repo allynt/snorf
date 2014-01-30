@@ -1,0 +1,14 @@
+# set of files to ignore by git
+
+## this file...
+#.gitignore
+
+# IDE configuration files...
+nbproject/
+
+# files being edited...
+*~
+*.swp
+
+# backups...
+*.bak
