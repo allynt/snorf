@@ -1,8 +1,6 @@
 snorf
 =====
 
-snorf "distraction-free" text editor
-
 This is a minimal text editor with just the features I want, and *no crap*.
 
 It lets me concentrate on writing with no distractions; It provides a full-screen window with lots of calming blank space; It doesn't try to deal with icky formatting, it just deals with raw text. The only features it bothers with are opening & saving files, updating the color scheme, resizing the font, tracking the word count, etc., and searching for text.
@@ -28,7 +26,9 @@ commands are as follows:
 - **ctrl-C**: copy
 - **ctrl-X**: cut
 - **ctrl-V**: paste
+
 -----
+
 snorf uses a property file, typically located at "$HOME/.snorfrc" with the following format:
 
     marginPct=2.5
@@ -38,5 +38,7 @@ snorf uses a property file, typically located at "$HOME/.snorfrc" with the follo
     fgColor=ad2a57
 
 If settings are changed while running snorf, this file is overwritten with the new settings.
+
 -----
+
 snorf is provided with a wrapper shell script to make calling it easy.  Usage is: ```snorf [-p <property file>] [<file to edit>]```
