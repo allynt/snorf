@@ -18,7 +18,7 @@ commands are as follows:
   - **ctrl-S**: save document
   - save document as...
   - **ctrl-F**: display find panel
-  -change the color scheme
+  - change the color scheme
   - **ctrl-U**: update statistics (word count, etc.) in statusBar
   - **esc**: minimizes the application
   - **ctrl-H**: display this help page
