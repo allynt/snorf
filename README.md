@@ -42,3 +42,5 @@ If settings are changed while running snorf, this file is overwritten with the n
 -----
 
 snorf is provided with a wrapper shell script to make calling it easy.  Usage is: ```snorf [-p <property file>] [<file to edit>]```
+
+test change
