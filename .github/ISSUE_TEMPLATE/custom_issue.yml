@@ -1,6 +1,6 @@
-name: B
+name: Custom Issue
 description: Submit a generic issue to help improve LFRic Core
-title: "[B]: "
+title: "[Custom Issue]: "
 labels: ["enhancement"]
 projects: ["MetOffice/208"]
 body:
@@ -38,5 +38,4 @@ body:
       label: Further details of the issue.
       description: Please give a detailed description of the issue to help with development including any requirements and links to additional literature
       render: shell
-
 
